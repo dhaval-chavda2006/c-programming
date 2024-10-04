@@ -1,12 +1,30 @@
 #include<stdio.h>
+#include<math.h>
 void main(){
-	int n,i=1;
 	
-	printf("ENTER THE VALUE OF N: ");
-	scanf("%d",&n);
+	int num,original,r,sum=0,c=0;
 	
-	while(i<=10){
-		printf("\n%d * %d = %d",n,i,n*i);
-		i++;}
-			
+	printf("ENTER NO.: ");
+	scanf("%d",&num);
+	
+	original = num;
+while(num>0){
+	
+	num=num/10;
+	c++;
+}
+		num = original;
+while(num>0){
+	r =num % 10;
+	sum = sum + pow(r,c);
+	num = num/10;
+
+}
+
+if(sum == original){
+	printf("ARMSTRONG");
+}
+else{
+	printf("NOT ARMSTRONG");
+}	
 }
