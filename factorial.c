@@ -11,7 +11,9 @@ void main(){
 while(i<=n){
 	
 	f *= i;
-	printf("\n%d",f);	
+	
 	i++;
+		
 }
+printf("\n%d",f);
 }
