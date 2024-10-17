@@ -16,7 +16,7 @@ while(num>0){
 		num = original;
 while(num>0){
 	r =num % 10;
-	sum = sum + pow(r,c);
+	sum = sum +(int)pow(r,c);
 	num = num/10;
 
 }
